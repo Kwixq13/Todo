@@ -4,7 +4,10 @@ import style from "./Header.module.scss"
 
 function Header(props) {
   return (
-    <div className={style.wrapper}>Header</div>
+    <header className={style.wrapper}>
+        Header
+    </header>
+
   )
 }
 
