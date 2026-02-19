@@ -1,13 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import style from "./Footer.module.scss"
 
-function Footer(props) {
+
+import React from 'react';
+import styles from './Footer.module.scss';
+
+function AppFooter() {
   return (
-    <div className={style.wrapper}>Footer</div>
-  )
+    <div className={styles.footerBar}>
+      <span className={styles.copyright}>
+        &copy; {new Date().getFullYear()} Calendar App. Rights reserved.
+      </span>
+    </div>
+  );
 }
 
-Footer.propTypes = {}
+export default AppFooter;
 
-export default Footer
