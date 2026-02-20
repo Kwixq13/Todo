@@ -28,6 +28,7 @@ function EventModal({ isOpen, onClose, onAdd }) {
 
   useEffect(() => {
     if (!isOpen) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setEventTitle('');
       setEventDate(dateToInputString(new Date()));
       setErrMsg('');

@@ -87,7 +87,7 @@ function WeekView({ events = [], onDeleteEvent }) {
                     ))}
                 </div>
                 <div className={styles.days}>
-                    {weekDays.map((date, i) => {
+                    {weekDays.map((date) => {
                         const key = dateKey(date);
                         const evts = groupedEvents[key] || [];
                         const today = isToday(date);

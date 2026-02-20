@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
